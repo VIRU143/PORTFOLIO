@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: League Spartan, sans-serif;
     background-image: url('layer-170971.jpg');
     background-size: cover;
   background-repeat: no-repeat;
@@ -134,11 +134,7 @@ body {
       font-size: 14px;
     }
   }
-  section form:hover {
-    background: linear-gradient(to right, #ff0000, #000000d1);
-    transition: background 0.5s ease-in-out;
-  }
-    
+   
   section form label {
     display: block;
     margin-bottom: 10px;
@@ -162,6 +158,21 @@ body {
     cursor: pointer;
     float: right;
     margin: auto;
+  }
+
+section#contact {
+  animation: bounceIn 1s ease-in-out;
+}
+
+@keyframes bounceIn {
+  from {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(10%);
+  }
+  60% {
+    transform: translateY(-10%);
   }
   
   section form input[type="submit"]:hover {
