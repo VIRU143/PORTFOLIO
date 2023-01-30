@@ -1,180 +1,310 @@
 body {
-    font-family:Futura PT,Futura PT;
-    background-image: url('layer-170971.jpg');
-    background-size: cover;
+  font-family: League Spartan, sans-serif;
+  background-image: url('D:/UDEMY COURSE/layer-170971.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #about-img {
-    border-radius: 80%;
-    width: 170px;
-    height: 170px;
-    margin: 0 auto;
-    display: block;
-    top: 10px ;
-    right: 10px;
-  }  
-  #virex {
-    color: #fff;
-    font-size: 25px;
-    position: absolute;
-    top: 3px;
-    left: 30px;
-    background: linear-gradient(to right, #ff6702, #51ff00, #000000, #ff0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }  
-  header {
-    background: linear-gradient(to right, #4169E1, #87CEEB, #000000, #ff0000);
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    z-index: 1;
-  }
-  @media screen and (max-width: 600px) {
-    header h1 {
-      font-size: 20px;
-    }
-    header nav ul li a {
-      font-size: 16px;
-    }
-  }
-  header nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  header:hover {
-    background: linear-gradient(to right, #000000, #ea0404);
-    transition: background 0.5s ease-in-out;
-  }
-      
-  
-  header h1 {
-    margin: 0;
-    text-align: center;
-  }
-  header nav {
-    display: flex;
-    justify-content: center;
-  }
-  header nav ul {
-    list-style-type: none;
-    display: inline-flex;
-    justify-content: flex-end;
-   
-    padding: 0;
-    margin: 0;
-  }
-  header nav ul li {
-    margin-right: 10px;
-  }
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-  }
-  header nav ul li a:hover {
-    color: #ccc;
-  }
-  section {
-    margin: 70px 0;
-    text-align: center;
-  }
-  section h1 {
-    margin-bottom: 30px;
-  }
-  section ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  section ul li {
-    width: 30%;
-    margin: 0 10px 30px 10px;
-    text-align: left;
-    transition: box-shadow 0.2s ease-in-out;
-    background: linear-gradient(to right, #F0E68C, #FFE4B5);
-    padding: 20px;
-  }
-  section ul li:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-  section ul li h2 {
-    margin-bottom: 10px;
-  }
-  section ul li a {
-    color: #333;
-    text-decoration: none;
-  }
-  section form {
-    margin: 60px auto;
-    width: 70%;
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.315);
-    padding: 20px;
-    border-radius: 20px;
-    z-index: 1;
-  }
-  @media screen and (max-width: 600px) {
-    section form label {
-      font-size: 16px;
-    }
-    section form input[type="text"], section form input[type="email"], section form textarea {
-      font-size: 14px;
-    }
-  }
-   
-  section form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  section form input[type="text"], section form input[type="email"], section form textarea{
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  section form textarea {
-    height: 150px;
-  }
-  section form input[type="submit"]{
-    background-color:  #58fc0d;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    margin: auto;
-  }
-
-section#contact {
-  animation: bounceIn 1s ease-in-out;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes bounceIn {
-  from {
-    transform: translateY(-100%);
-  }
-  30% {
-    transform: translateY(10%);
-  }
-  60% {
-    transform: translateY(-10%);
-  }
+.AASHU {
+  color: #51ff00
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #ffffffa1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
   
-  section form input[type="submit"]:hover {
-    background-color: linear-gradient(to right, #58fc0d, #000000d1);
-  }  
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+      color-stop(0.5, rgba(255, 255, 255, 0.2)),
+      color-stop(0.5, transparent), to(transparent));
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+.websites {
+  margin: 50px 0;
+  text-align: center;
+
+}
+
+.websites h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.websites ul {
+  list-style: none;
+  padding: 0;
+}
+
+.websites li {
+  margin: 10px 0;
+}
+
+.websites a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.menu-icon {
+  font-size: 30px;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu-icon:hover+.navbar a {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+#about-img {
+  border-radius: 80%;
+  width: 170px;
+  height: 170px;
+  margin: 0 auto;
+  display: block;
+  top: 10px;
+  right: 10px;
+}
+
+#virex {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #ccc;
+}
+
+section {
+  margin: 70px 0;
+  text-align: center;
+}
+
+section h1 {
+  margin-bottom: 30px;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+section ul li {
+  width: 30%;
+  margin: 0 10px 30px 10px;
+  text-align: left;
+  transition: box-shadow 0.2s ease-in-out;
+  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+  padding: 20px;
+}
+
+section ul li:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section ul li h2 {
+  margin-bottom: 10px;
+}
+
+section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+section form {
+  margin: 60px auto;
+  width: 70%;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.315);
+  padding: 40px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  section form label {
+    font-size: 16px;
+  }
+
+  section form input[type="text"],
+  section form input[type="email"],
+  section form textarea {
+    font-size: 14px;
+  }
+}
+
+section form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+section form input[type="text"],
+section form input[type="email"],
+section form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+section form textarea {
+  height: 150px;
+}
+
+section form input[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+  color: white;
+  padding: 10px 35px;
+  border: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+}
+
+section#contact {
+  animation: slideIn 1s ease-in-out;
+}
+
+
+
+section form input[type="submit"]:hover {
+  background-color: #FAD961;
+background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+}
