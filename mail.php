@@ -3,7 +3,7 @@
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
-    $to = "your-email-address@example.com";
+    $to = "vpvirendra2002@gmail.com";
     $subject = "Message from portfolio website";
     $headers = "From: $email" . "\r\n";
     $headers .= "Reply-To: $email" . "\r\n";
