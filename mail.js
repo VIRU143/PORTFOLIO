@@ -5,10 +5,10 @@ function SendEmail() {
     Host : "smtp.elasticemail.com",
     Username : "parmaraashu9@gmail.com",
     Password : "E2F7F429B376092F0844510E027B21429BBF7",
-    To : document.getElementById("idname").value,
+    To : document.getElementById("Email").value,
     From : 'parmaraashu9@gmail.com',
     Subject : "",
-    Body : document.getElementById("message").value
+    Body : document.getElementById("Message").value
   }).then(
   message => alert(message)
   );
