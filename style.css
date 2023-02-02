@@ -1,6 +1,6 @@
 body {
   font-family: League Spartan, sans-serif;
-  background-image: url('layer-170971.jpg');
+  background-image: url('D:/UDEMY COURSE/layer-170971.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,13 +24,11 @@ marquee {
 }
 
 
-.AASHU {
-  color: #51ff00
-}
+
 
 body::-webkit-scrollbar {
-  width: 8px;
-  background-color: #ffffffa1;
+  width: 10px;
+  background-color: #ffffffd9;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -67,28 +65,14 @@ h6 {
 
 
 .websites {
-  margin: 50px 0;
+  margin: auto;
   text-align: center;
 
 }
 
-.websites h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.websites ul {
-  list-style: none;
-  padding: 0;
-}
-
-.websites li {
-  margin: 10px 0;
-}
 
 .websites a {
   color: #333;
-  text-decoration: none;
 }
 
 
@@ -158,12 +142,13 @@ header nav ul li a:hover {
 }
 
 section {
-  margin: 70px 0;
+  margin: 80px auto;
   text-align: center;
 }
 
 section h1 {
-  margin-bottom: 30px;
+  top: 30px;
+  font-size: 30px;
 }
 
 section ul {
@@ -177,8 +162,8 @@ section ul {
 section ul li {
   width: 30%;
   margin: 0 10px 30px 10px;
-  text-align: left;
-  transition: box-shadow 0.2s ease-in-out;
+  text-align: center;
+  transition: box-shadow 0.1s ease-in-out;
   background-image: linear-gradient(135deg, #81FFEF 10%, #F067B4 100%);
   padding: 20px;
 }
@@ -347,7 +332,6 @@ body {
   flex-flow: row wrap;
 }
 
-/*** Containers and icons ***/
 
 .social-icon {
   display: flex;
@@ -358,7 +342,7 @@ body {
 
   width: var(--link-size);
   height: var(--link-size);
-  margin: 8px;
+  margin: 40px 10px;
 
   background-color: white;
   border-radius: 50%;
@@ -459,18 +443,6 @@ body {
   animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
 }
 
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@-webkit-keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
-
 .wrapper.five {
   font-size: 1rem;
   font-family: "Play", sans-serif;
@@ -491,6 +463,20 @@ body {
   animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
 }
 
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 .wrapper.two {
   font-size: 30px;
   font-family: "Play", sans-serif;
@@ -503,6 +489,16 @@ body {
   margin: 0;
   animation: neon 1s ease infinite;
 }
+.marque-text-container marquee{
+  margin: 0;
+  animation: neon 1s ease infinite;
+}
+section h1{
+  margin: 0;
+  animation: neon 1s ease infinite;
+}
+
+
 
 @keyframes neon {
 
@@ -789,6 +785,7 @@ height: 100%;
 text-decoration: none;
 background: #fff;
 border-radius: 8px;
+animation: typing 0.3s steps(13, end), blink-caret 0.5s step-end infinite alternate;
 transform: skewX(15deg);
 transition: 0.5s;
 }
@@ -834,6 +831,16 @@ background: linear-gradient(315deg, #03a9f4, #ff0058)
 {
 background: linear-gradient(315deg, #4dff03, #00d0ff)
 }
+
+.containers .box:nth-child(4):before,
+.containers .box:nth-child(4):after
+{
+background: linear-gradient(315deg,#FF3CAC , #784BA0 , #2B86C5 )
+}
+
+
+
+
 
 .containers .box span
 {
@@ -938,6 +945,7 @@ padding: 60px 40px;
 font-size: 2em;
 color: #fff;
 margin-bottom: 10px;
+text-align: center;
 }
 
 .containers .box .content p
@@ -949,22 +957,45 @@ line-height: 1.4em;
 
 .containers .box .content a
 {
+  position: relative;
 display: inline-block;
 font-size: 1.1em;
-color: #111;
-background: #fff;
-padding: 10px;
+color:#fff;
+padding: 12px 35px;
 border-radius: 4px;
 text-decoration: none;
 font-weight: 700;
+outline: 2px solid #7EFFB2;
 margin-top: 5px;
+overflow: hidden;
+transition: color 1s;
 }
 
 .containers .box .content a:hover
 {
-background: #ffcf4d;
-border: 1px solid rgba(255, 0, 88, 0.4);
+color:#090909;
+border : 1px solid rgba(255, 0, 88, 0.4);
 box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+.containers .box .content a:hover::before
+{
+  transform: scaleX(1) skewX(35deg);
+}
+
+.containers .box .content a::before
+{
+  content: '';
+  position: absolute;
+  top:0px;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #01b7fd;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: 1s;
 }
 
 
