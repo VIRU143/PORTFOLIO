@@ -50,9 +50,9 @@
   </header>
 
   <div class="marque-text-container">
-    <marquee direction = "left">!! Welcome to VIR乛EX Portfolio Website ! Created by "Virendra Parmar" !!</marquee>
+    <marquee direction="left">!! Welcome to VIR乛EX Portfolio Website ! Created by "Virendra Parmar" !!</marquee>
   </div>
-  
+
 
   <section id="about">
     <h1>About Me</h1>
@@ -129,68 +129,66 @@
       <li>Language 3</li>
     </ul>
   </section>
-  
+
   <section>
-  <h2 class="section-title">Education</h2>
-  <div class="containers">
-    <div class="box">
-      <span></span>
-      <div class="content">
-        <h2>Card one</h2>
-        <p></p>
-        <a href="#">Read More</a>
+    <h2 class="section-title">Education</h2>
+    <div class="containers">
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <h2>Card one</h2>
+          <p></p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <h2>Card two</h2>
+          <p></p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="box">
+        <span></span>
+        <div class="content">
+          <h2>Card Three</h2>
+          <p></p>
+          <a href="#">Read More</a>
+        </div>
       </div>
     </div>
-    <div class="box">
-      <span></span>
-      <div class="content">
-        <h2>Card two</h2>
-        <p></p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-    <div class="box">
-      <span></span>
-      <div class="content">
-        <h2>Card Three</h2>
-        <p></p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
   </section>
 
   <section id="contact">
     <h1>Contact Me</h1>
-    <form onsubmit="SendEmail();reset(); return false;">
+    <form method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email"><br>
       <label for="message">Message:</label>
       <textarea id="message" name="message"></textarea><br>
-      <input type="submit" value="Send">
+      <div class="wrap">
+        <button class="button">send</button>
+      </div>
     </form>
   </section>
 
-    <script src="https://smtpjs.com/v3/smtp.js">
-</script>
-   <script >
-     function SendEmail() {
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "parmaraashu9@gmail.com",
-    Password : "E2F7F429B376092F0844510E027B21429BBF7",
-    To : document.getElementById("Email").value,
-    From : 'parmaraashu9@gmail.com',
-    Subject : "",
-    Body : document.getElementById("Message").value
-  }).then(
-  message => alert(message)
-  );
-}
-</script>
-
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script>
+    function SendEmail() {
+      Email.send({
+        SecureToken:"<6d993170-99c7-4b08-a2ba-910c3abf58>",
+        To: document.getElementById("Email").value,
+        From: 'parmaraashu9@gmail.com',
+        Subject: "",
+        Body: document.getElementById("Message").value
+      }).then(message => alert("email successfully sent")
+      );
+    }
+  </script>
 
 </body>
 
