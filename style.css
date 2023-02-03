@@ -1,6 +1,6 @@
 body {
   font-family: League Spartan, sans-serif;
-  background-image: url('layer-170971.jpg');
+  background-image: url('D:/UDEMY COURSE/layer-170971.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -43,11 +43,11 @@ body::-webkit-scrollbar-thumb {
 
 
 
-h1,
+.about h6,
 h2,
 h3,
-h4,
-h5,
+h6,
+h6,
 h6 {
   animation: slideInFromLeft 1s ease-in-out;
 }
@@ -91,7 +91,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  header h1 {
+  header .about h6 {
     font-size: 20px;
   }
 
@@ -109,7 +109,7 @@ header nav {
 
 
 
-header h1 {
+header .about h6 {
   margin: 0;
   text-align: center;
 }
@@ -146,9 +146,45 @@ section {
   text-align: center;
 }
 
-section h1 {
+section .about h6 {
   top: 30px;
   font-size: 30px;
+}
+.about  {
+  display:list-item;
+  margin: auto;
+  width:35em;
+  line-height: 1;
+  font-style: italic;
+  font-size: 1em;
+  font-family: "Play", sans-serif;
+
+}
+.about h6{
+  color: #090909;
+  margin: auto;
+  font-size: 5px;
+}
+.about h6 span{
+  transition: .5s linear
+}
+
+.about h6:hover span:nth-child(1){
+  margin-right: 3px
+}
+.about h6:hover span:nth-child(1)::after{
+  content: " '";
+}
+.about h6:hover span:nth-child(2){
+  margin-left: 10px
+}
+.about h6:hover span{
+  color: #fefefe;
+
+text-shadow: 10px 10px 25px rgb(0, 242, 255),
+    -10px 10px 25px rgb(0, 242, 255),
+    -10px -10px 25px rgb(0, 242, 255),
+    10px -10px 25px rgb(0, 242, 255);
 }
 
 section ul {
@@ -563,7 +599,7 @@ header, footer
 	text-align: center;
 }
 
-header h1
+header .about h6
 {
     font-size: 40px;
     font-weight: lighter;
