@@ -183,6 +183,7 @@ section .about h6 {
   transition: box-shadow 0.2s ease-in-out;
   background-color: #323046;
   padding: 10px;
+  cursor: pointer;
 }
 
 .about h6 span {
