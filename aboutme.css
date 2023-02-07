@@ -1,0 +1,76 @@
+section .about h6 {
+    top: 30px;
+    font-size: 30px;
+  }
+  
+  .about {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    width: 35em;
+    height: 600px;
+    line-height: 1.5;
+    font-style: italic;
+    font-size: 1em;
+    font-family: "Play", sans-serif;
+    bottom: 500px;
+  }
+  
+  .about p {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    transition: box-shadow 0.1s ease-in-out;
+    background-image: linear-gradient(135deg, #81FFEF 10%, #F067B4 100%);
+    padding: 10px;
+  }
+  
+  .about h6 {
+    margin: auto;
+    font-size: 5px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: #4d4a74;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .about h6 span {
+    transition: .5s linear
+  }
+  
+  .about h6:hover span:nth-child(1) {
+    margin-right: 3px
+  }
+  
+  .about h6:hover span:nth-child(2) {
+    margin-left: 10px
+  }
+  
+  .about h6:hover span {
+    color: #fefefe;
+  
+    text-shadow: 10px 10px 25px rgb(0, 242, 255),
+      -10px 10px 25px rgb(0, 242, 255),
+      -10px -10px 25px rgb(0, 242, 255),
+      10px -10px 25px rgb(0, 242, 255);
+  }
+
+  .about h6,
+h2,
+h3{
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

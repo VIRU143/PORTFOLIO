@@ -1,0 +1,52 @@
+.wrapper.four {
+    font-size: 1rem;
+    font-family: "Play", sans-serif;
+  }
+  
+  .four .type {
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+  }
+  
+  .four h3 {
+    width: 27ch;
+    border-right: 4px solid black;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+  }
+  
+  .wrapper.five {
+    font-size: 1rem;
+    font-family: "Play", sans-serif;
+  }
+  
+  .five .type {
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+  }
+  
+  .five h3 {
+    width: 17ch;
+    border-right: 4px solid black;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+  }
+  
+  
+  @-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @-webkit-keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }

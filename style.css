@@ -1,0 +1,110 @@
+body {
+  font-family: League Spartan, sans-serif;
+  background-image: url('layer-170971.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.marque-text-container {
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+marquee {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.marque-text-container marquee {
+  margin: 0;
+  animation: neon 1s ease infinite;
+}
+
+
+section {
+  margin: 80px auto;
+  text-align: center;
+}
+
+section ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section ul li {
+  display: block;
+  width: 30%;
+  margin: 0 10px 30px 10px;
+  text-align: center;
+  transition: box-shadow 0.1s ease-in-out;
+  background-image: linear-gradient(135deg, #81FFEF 10%, #F067B4 100%);
+  padding: 20px;
+}
+
+
+section ul li:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 0 40px rgb(20, 20, 20);
+}
+
+section ul li h2 {
+  margin-bottom: 10px;
+}
+
+section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+.wrapper.two {
+  font-size: 30px;
+  font-family: "Play", sans-serif;
+  position: absolute;
+  top: 4px;
+  left: 70px;
+}
+
+.neon h3 {
+  margin: 0;
+  animation: neon 1s ease infinite;
+}
+section h1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 28px;
+  overflow: hidden;
+  transition: 0.2s;
+  animation: neon 1s ease infinite;
+  width: 20ch;
+  bottom: 1em;
+  top: auto;
+}
+@keyframes neon {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+    color: #f5efcb;
+  }
+
+  50% {
+    color: #fefefe;
+    text-shadow: 0 0 10px rgb(0, 242, 255),
+      0 0 20px rgb(0, 242, 255),
+      0 0 20px rgb(0, 242, 255),
+      0 0 20px rgb(0, 242, 255);
+  }
+}
