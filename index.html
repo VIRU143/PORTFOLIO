@@ -4,6 +4,15 @@
 <head>
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="snoweffect.css">
+  <link rel="stylesheet" type="text/css" href="headernav.css">
+  <link rel="stylesheet" type="text/css" href="aboutme.css">
+  <link rel="stylesheet" type="text/css" href="project.css">
+  <link rel="stylesheet" type="text/css" href="website.css">
+  <link rel="stylesheet" type="text/css" href="contactme.css">
+  <link rel="stylesheet" type="text/css" href="scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="education.css">
+  <link rel="stylesheet" type="text/css" href="heart.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" <meta name="viewport"
@@ -140,7 +149,9 @@
   </section>
   <section id="skills">
     <h1>My Skills</h1>
-    
+    <ul>
+     
+    </ul>
   </section>
 
   <section>
@@ -189,20 +200,32 @@
 
   <section id="contact">
     <h1>Contact Me</h1>
-    <form method="post">
+    <form action="https://formsubmit.co/parmaraashu9@gmail.com" method="post" id="contact-form">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br>
+      <input type="text" id="name" name="name" required><br>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br>
+      <input type="email" id="email" name="email" required><br>
       <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea><br>
+      <textarea id="message" name="message" required></textarea><br>
       <div class="wrap">
         <button class="button">send</button>
       </div>
     </form>
   </section>
+  <div id="aashu">
+    <div class="heart-like-button"></div>
+    <h1>Click on me</h1>
+  </div>
+  <script>
+    const button = document.querySelector(".heart-like-button");
 
-  
+button.addEventListener("click", () => {
+  if (button.classList.contains("liked")) {
+    button.classList.remove("liked");
+  } else {
+    button.classList.add("liked");
+  }
+});
+  </script>
 </body>
-
 </html>
